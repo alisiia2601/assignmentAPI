@@ -88,10 +88,11 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <div className="category">
-        <h1>Planets:</h1>
-        <div className="navigation-buttons">
+        <h1 className='corrects'>Planets:</h1>
+        <div className="navigation-buttons buttons">
           <button onClick={handlePrevPlanetsPage} disabled={planetsPrevPage === null}>Previous Planets</button>
           <button onClick={handleNextPlanetsPage} disabled={planetsNextPage === null}>Next Planets</button>
         </div>
@@ -103,8 +104,8 @@ function App() {
       )}
   
       <div className="category">
-        <h1>Persons:</h1>
-        <div className="navigation-buttons">
+        <h1 className='corrects2'>Persons:</h1>
+        <div className="navigation-buttons buttons1">
           <button onClick={handlePrevPeoplePage} disabled={peoplePrevPage === null}>Previous People</button>
           <button onClick={handleNextPeoplePage} disabled={peopleNextPage === null}>Next People</button>
         </div>
@@ -116,10 +117,10 @@ function App() {
       )}
   
       <div className="category">
-        <h1>Ships:</h1>
-        <div className="navigation-buttons">
-          <button onClick={handlePrevShipsPage} disabled={shipsPrevPage === null}>Previous Ships</button>
-          <button onClick={handleNextShipsPage} disabled={shipsNextPage === null}>Next Ships</button>
+        <h1 className='corrects3'>Ships:</h1>
+        <div className="navigation-buttons buttons2 ">
+          <button onClick={handlePrevShipsPage} disabled={shipsPrevPage === null}>Previous Ship</button>
+          <button onClick={handleNextShipsPage} disabled={shipsNextPage === null}>Next Ship</button>
         </div>
       </div>
       {ships.length > 0 && (
@@ -128,6 +129,7 @@ function App() {
         </div>
       )}
     </div>
+    
   );
   
 }

@@ -1,33 +1,63 @@
 body {
+  position: relative;
+  width: 100%0px;
+  height: 780px;
+  background-image: url(/public/main@3x.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   
-  background-color: black;
-  color: yellow;
-  font-family: 'Star Jedi', sans-serif;
+  text-align: left;
+  font-size: var(--body-regular-34-size);
+  color: var(--medium-gray);
+  font-family: var(--body-semibold-30);
+  
+  
   font-size: 20px;
 }
 
 h1 {
+  color: red;
+ 
   font-size: 30px;
   text-align: center;
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+  background-color: var(--dark-gray);
+  box-shadow: var(--button-selected);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs) var(--padding-5xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: var(--br-5xs);
+  height: 96px;
+  flex-shrink: 0;
 }
+
 
 p {
   font-size: 24px;
+  color: black;
+  font-style: oblique;
   text-align: center;
 }
 
 .navigation-buttons {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 button {
-  background-color: yellow;
+  background-color: rgb(255, 0, 0);
   border: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: 'Star Jedi', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 10px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -49,7 +79,7 @@ button:disabled {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  /*margin: 20px 0;*/
 }
 
 .category h1 {
@@ -73,3 +103,75 @@ button:disabled {
   font-family: 'Star Jedi';
   src: url('path/to/StarJedi.ttf');
 }
+
+
+
+.buttons {
+  position: absolute;
+  top: 105px;
+  left: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+}
+
+.buttons1 {
+  position: absolute;
+  top: 334px;
+  left: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+}
+
+.buttons2 {
+  position: absolute;
+  top: 555px;
+  left: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+}
+
+.corrects {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 960px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
+.corrects2 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 960px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
+.corrects3 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 960px;
+  height: 116px;
+  flex-shrink: 0;
+}
+
