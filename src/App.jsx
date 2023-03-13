@@ -93,8 +93,8 @@ function App() {
       <div className="category">
         <h1 className='corrects'>Planets:</h1>
         <div className="navigation-buttons buttons">
-          <button onClick={handlePrevPlanetsPage} disabled={planetsPrevPage === null}>Previous Planets</button>
-          <button onClick={handleNextPlanetsPage} disabled={planetsNextPage === null}>Next Planets</button>
+          <button onClick={handlePrevPlanetsPage} disabled={planetsPrevPage === null}>Previous Planet</button>
+          <button onClick={handleNextPlanetsPage} disabled={planetsNextPage === null}>Next Planet</button>
         </div>
       </div>
       {planets.length > 0 && (
@@ -106,8 +106,8 @@ function App() {
       <div className="category">
         <h1 className='corrects2'>Persons:</h1>
         <div className="navigation-buttons buttons1">
-          <button onClick={handlePrevPeoplePage} disabled={peoplePrevPage === null}>Previous People</button>
-          <button onClick={handleNextPeoplePage} disabled={peopleNextPage === null}>Next People</button>
+          <button onClick={handlePrevPeoplePage} disabled={peoplePrevPage === null}>Previous Person</button>
+          <button onClick={handleNextPeoplePage} disabled={peopleNextPage === null}>Next Person</button>
         </div>
       </div>
       {people.length > 0 && (
